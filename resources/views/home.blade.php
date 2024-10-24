@@ -16,7 +16,7 @@
                     @auth
                     {{ __('You are logged in!') }}
                     @else
-                    {{ __('Please log in!') }}
+                    {{ __('Welcome. Please log in!') }}
                     @endauth
                 </div>
             </div>
