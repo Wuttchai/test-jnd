@@ -29,12 +29,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::resource('urls', App\Http\Controllers\UrlController::class)
-->middleware(['auth', 'verified']);
-
-/* Route::middleware('auth')->group(function () {
-    Route::get('/urls.index', [App\Http\Controllers\UrlController::class, 'index'])->name('urls.index');
-    Route::post('/urls.store', [App\Http\Controllers\UrlController::class, 'store'])->name('urls.store');
-    Route::get('/urls.edit', [App\Http\Controllers\UrlController::class, 'edit'])->name('urls.edit');
-}); */
+->middleware(['auth', 'verified']); 
 
  Route::get('{shortener_url}', [App\Http\Controllers\UrlController::class, 'shortenLink'])->name('shortener-url');

@@ -15,13 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
  
-/* Route::get('/registers', [UserController::class, 'showRegistrationForm']); */
-/* Route::post('/register', [UserController::class, 'register'])->name('register');
-  
-Route::get('/registers', function () {
-    return view('auth.register');
-});
-
-
-Route::get('/login', [UserController::class, 'showLoginForm']);
-Route::post('/login', [UserController::class, 'login'])->name('login'); */
+ 
